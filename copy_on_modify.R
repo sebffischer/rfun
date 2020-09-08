@@ -13,7 +13,7 @@ a[2] <- 2L
 
 c <- a
 
-a[1] <- 100L # now it is coppied as the object has 2 references
+a[1] <- 100L # now it is copied as the object has 2 references
 
 ## vs. 
 
@@ -22,5 +22,5 @@ tracemem(b)
 b[2] <- 3L
 
 ## the reason for the behavior of b is that the internal representation of 
-# sequential 
+# sequential vectors
 # https://stackoverflow.com/questions/60688463/why-is-r-not-modifying-in-place-in-this-situation
